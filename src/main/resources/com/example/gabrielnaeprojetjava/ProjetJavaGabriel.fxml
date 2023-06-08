@@ -53,5 +53,10 @@
       </GridPane>
       <Button fx:id="buttonAjouter" layoutX="255.0" layoutY="627.0" mnemonicParsing="false" onAction="#ajouterPizzaBouton" prefHeight="36.0" prefWidth="105.0" text="Ajouter" />
       <Button fx:id="buttonSuprimer" layoutX="500.0" layoutY="627.0" mnemonicParsing="false" onAction="#supprimerTouteLesPizzasBouton" prefHeight="36.0" prefWidth="105.0" text="Supprimer" />
+      <Label fx:id="labelErreur" alignment="CENTER" layoutX="153.0" layoutY="579.0" prefHeight="36.0" prefWidth="586.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
