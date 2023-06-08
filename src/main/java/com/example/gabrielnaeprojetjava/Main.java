@@ -1,3 +1,8 @@
+package com.example.gabrielnaeprojetjava;
+
+import com.example.gabrielnaeprojetjava.Pizza;
+
+import java.util.List;
 
 public class Main {
 
@@ -12,5 +17,13 @@ public class Main {
         System.out.println(
                 testPizza.getPrix()
         );
+        afficherPizas();
+        //new PizzaDAO().ajouterPizza(new Pizza("Test", 2.5F, 5));
+        //new PizzaDAO().supprimerPizza();
+    }
+
+    private static void afficherPizas() {
+        List<Pizza> pizzas = new PizzaDAO().getPizza();
+        pizzas.stream().forEach(pizza -> System.out.println(pizza.getNom() + " " + pizza.getPrix() + " " + pizza.getNbIngredients()));
     }
 }

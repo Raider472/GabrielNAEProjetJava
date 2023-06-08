@@ -1,3 +1,5 @@
+package com.example.gabrielnaeprojetjava;
+
 public class Pizza {
     String nom;
 
